@@ -1,0 +1,6 @@
+framework module Pods_lightSVN_lightSVNUITests {
+  umbrella header "Pods-lightSVN-lightSVNUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

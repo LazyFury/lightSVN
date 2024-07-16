@@ -15,6 +15,7 @@ extension SVN{
         var entries:[Entry] = []
         private var curIndex:Int = -1
         
+
         struct Entry:Identifiable,Hashable{
             var id = UUID()
             var path:String
@@ -22,6 +23,7 @@ extension SVN{
             var revision:String?
             var prop:String?
         }
+        
         
         
         func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {

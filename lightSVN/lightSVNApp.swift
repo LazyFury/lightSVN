@@ -14,6 +14,7 @@ struct lightSVNApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(minWidth: 1080,minHeight: 540)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -9,7 +9,8 @@ import Foundation
 import SwiftyXMLParser
 
 extension SVN {
-    struct Commit{
+    struct Commit:Hashable,Identifiable{
+        var id = UUID()
         var author:String
         var revision:String
         var date:String?

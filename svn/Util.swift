@@ -47,7 +47,7 @@ extension SVN {
             dyldLibraryPath += ":\(libPath?.path ?? "")"
             process.environment = ["DYLD_LIBRARY_PATH": dyldLibraryPath,
                                    "LANG":"zh_CN.UTF-8"]
-            
+            print(process.environment)
             return process
         }
         
@@ -95,7 +95,7 @@ extension SVN {
         }
 
         func list(url:String,args:Array<String> = [])->String{
-            return SVN.Util.shared.exec(args: ["list",url,"--xml"] + args)
+            return SVN.Util.shared.exec(args: ["list",url,"--xml","--username","suke","--password","suke123","--trust-server-cert-failures=unknown-ca","--non-interactive"] + args)
         }
 
         func log(root:URL,target:String,limit:Int=10,args:Array<String> = [])->String{

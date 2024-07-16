@@ -89,9 +89,7 @@ struct WorkspaceView: View {
         VStack(spacing:0){
             
             HStack(spacing:0){
-                
-                
-                
+
                 if((item.bookmark) != nil){
                     VStack(spacing:0){
                         HStack(spacing:2){
@@ -121,8 +119,13 @@ struct WorkspaceView: View {
                             return
                         }
                         
-                        let infoStr = SVN.Util.shared.info(url: file.url.path)
-                        info = SVN.Info.fromString(str: infoStr)
+                        DispatchQueue.global().async{
+                            let infoStr = SVN.Util.shared.info(url: file.url.path)
+                            let info = SVN.Info.fromString(str: infoStr)
+                            DispatchQueue.main.async{
+                                self.info = info
+                            }
+                        }
                     }
                     
                 }
