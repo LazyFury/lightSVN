@@ -107,6 +107,7 @@
 		BA13D9BD2C452CAD00EAAB61 /* libz.1.dylib in Resources */ = {isa = PBXBuildFile; fileRef = BA13D8FF2C452A9900EAAB61 /* libz.1.dylib */; };
 		BA13D9BF2C455C6D00EAAB61 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13D9BE2C455C6D00EAAB61 /* Repo.swift */; };
 		BA13D9C32C45657500EAAB61 /* RepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA13D9C22C45657500EAAB61 /* RepositoryView.swift */; };
+		BA13D9C42C4622ED00EAAB61 /* svnlook in Resources */ = {isa = PBXBuildFile; fileRef = BA13D87D2C452A9900EAAB61 /* svnlook */; };
 		C1CF9A186766C1CBB0D3A197 /* Pods_lightSVNTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC70E417941DEC986338E118 /* Pods_lightSVNTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -785,6 +786,7 @@
 				BA13D9BC2C452CAD00EAAB61 /* libz.1.3.1.dylib in Resources */,
 				BA13D9BD2C452CAD00EAAB61 /* libz.1.dylib in Resources */,
 				BA13D9702C452CA000EAAB61 /* svn in Resources */,
+				BA13D9C42C4622ED00EAAB61 /* svnlook in Resources */,
 				BA13D9132C452A9900EAAB61 /* svn-revision.txt in Resources */,
 				BA13D8502C4529FD00EAAB61 /* Preview Assets.xcassets in Resources */,
 				BA13D84D2C4529FD00EAAB61 /* Assets.xcassets in Resources */,
@@ -1098,6 +1100,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1131,6 +1134,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
